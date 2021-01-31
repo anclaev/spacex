@@ -8,22 +8,22 @@ const Header = () => (
     <nav className="main-nav nav">
       <ul className="list">
         <li className="item">
-          <a href="#" className="item-link">
+          <a href="/" className="item-link">
             Falcon 1
           </a>
         </li>
         <li className="item">
-          <a href="#" className="item-link">
+          <a href="/" className="item-link">
             Falcon 9
           </a>
         </li>
         <li className="item">
-          <a href="#" className="item-link">
+          <a href="/" className="item-link">
             Falcon Heavy
           </a>
         </li>
         <li className="item">
-          <a href="#" className="item-link">
+          <a href="/" className="item-link">
             Updates
           </a>
         </li>
@@ -32,7 +32,7 @@ const Header = () => (
     <nav className="secondary-nav">
       <ul className="list">
         <li className="item">
-          <a href="#" className="item-link">
+          <a href="/" className="item-link">
             Home
           </a>
         </li>
