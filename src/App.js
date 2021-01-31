@@ -1,46 +1,25 @@
+import React from "react";
+import Header from "./components/Header";
+import "./css/style.css";
+
 function App() {
   return (
-    <header className="header">
-      <img src="img/logo.svg" alt="Logo Space X" className="logo" />
-      <nav className="main-nav nav">
-        <ul className="list">
-          <li className="item">
-            <a href="#" className="item-link">
-              Falcon 1
-            </a>
-          </li>
-          <li className="item">
-            <a href="#" className="item-link">
-              Falcon 9
-            </a>
-          </li>
-          <li className="item">
-            <a href="#" className="item-link">
-              Falcon Heavy
-            </a>
-          </li>
-          <li className="item">
-            <a href="#" className="item-link">
-              Updates
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <nav className="secondary-nav">
-        <ul className="list">
-          <li className="item">
-            <a href="#" className="item-link">
-              Home
-            </a>
-          </li>
-          <li className="item">
-            <a href="calendar.html" className="item-link">
-              Calendar
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <React.Fragment>
+      <Header />
+      <section className="main">
+        <h1 className="title">Falcon 1</h1>
+
+        <div className="video-container">
+          <video
+            className="video"
+            autoPlay
+            loop
+            muted
+            src="./video/moon.mp4"
+          ></video>
+        </div>
+      </section>
+    </React.Fragment>
   );
 }
 
