@@ -2,10 +2,18 @@ import React from "react";
 import RellaxWrapper from "react-rellax-wrapper";
 import "./features.css";
 
-const Features = () => (
+const rocketTitles = {
+  "Falcon 1": "falcon-1",
+  "Falcon 9": "falcon-9",
+  "Falcon Heavy": "falcon-heavy",
+  other: "starship",
+};
+
+const Features = ({ rocket }) => (
   <section className="features">
     <h2 className="features-title">
-      Falcon 1 <br />
+      {rocket}
+      <br />
       Overview
     </h2>
     <div className="overview">
@@ -31,7 +39,15 @@ const Features = () => (
         </thead>
       </table>
       <RellaxWrapper speed="10">
-        <img src="img/falcon-1.png" alt="rocket" className="rocket" />
+        <img
+          src={`img/${
+            rocketTitles.hasOwnProperty(rocket)
+              ? rocketTitles[rocket]
+              : rocketTitles.other
+          }.png`}
+          alt="rocket"
+          className="rocket"
+        />
       </RellaxWrapper>
 
       <article>
