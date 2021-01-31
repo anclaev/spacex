@@ -8,15 +8,21 @@ import Footer from "./components/Footer";
 
 import "./css/style.css";
 
-function App() {
-  return (
-    <>
-      <Header />
-      <Main />
-      <Features />
-      <Footer />
-    </>
-  );
+class App extends React.Component {
+  state = {
+    rocket: "Falcon 1",
+  };
+
+  render() {
+    return (
+      <>
+        <Header />
+        <Main rocket={this.state.rocket} />
+        <Features />
+        <Footer />
+      </>
+    );
+  }
 }
 
 export default App;
