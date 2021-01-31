@@ -1,6 +1,13 @@
 import React from "react";
 import "./main.css";
 
+const video = {
+  "Falcon 1": "moon",
+  "Falcon 9": "earth",
+  "Falcon Heavy": "mars",
+  other: "space",
+};
+
 const Main = ({ rocket }) => (
   <section className="main">
     <h1 className="title">{rocket}</h1>
@@ -11,7 +18,9 @@ const Main = ({ rocket }) => (
         autoPlay
         loop
         muted
-        src="./video/moon.mp4"
+        src={`./video/${
+          video.hasOwnProperty(rocket) ? video[rocket] : video.other
+        }.mp4`}
       ></video>
     </div>
   </section>
