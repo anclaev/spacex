@@ -5,14 +5,16 @@ import FetchData from "../../service/FetchData";
 
 import Main from "../Main";
 
-const Calendar = () => {
-  const fetchData = new FetchData();
+const fetchData = new FetchData();
 
+const Calendar = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetchData.getLaunches().then((launches) => setData(launches));
-  }, []);
+    fetchData
+      .getLaunches()
+      .then((launches) => setData((state) => [...launches]));
+  }, [fetchData]);
 
   return (
     <>
