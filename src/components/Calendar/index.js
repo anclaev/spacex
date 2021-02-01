@@ -9,7 +9,7 @@ const Calendar = () => {
 
   return (
     <>
-      <Main />
+      <Main name="Calendar" />
       <section className="calendar">
         <div className="container">
           <ul className="calendar-list">
@@ -25,7 +25,7 @@ const Calendar = () => {
                       to={`/details/${item.id}`}
                       className="button launches-details"
                     >
-                      Подробнее
+                      MORE
                     </Link>
                   </div>
                 </article>

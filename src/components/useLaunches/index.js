@@ -13,7 +13,8 @@ const useLaunches = () => {
       .then((launches) => setData((state) => [...launches]));
   }, []);
 
-  return { data };
+  const getLaunch = (id) => data.find((item) => item.id === id);
+  return { data, getLaunch };
 };
 
 export default useLaunches;
