@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../img/logo.svg";
 import "./footer.css";
 
-const Footer = () => (
+const Footer = (props) => (
   <footer className="footer">
     <img src={logo} alt="logo Space X" className="logo" />
     <nav className="footer-nav">
