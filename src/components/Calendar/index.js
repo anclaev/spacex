@@ -1,23 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import "./calendar.css";
-import FetchData from "../../service/FetchData";
-
+import useLaunches from "../useLaunches";
 import Main from "../Main";
 
-const fetchData = new FetchData();
-
 const Calendar = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetchData
-      .getLaunches()
-      .then((launches) => setData((state) => [...launches]));
-  }, [fetchData]);
+  const { data } = useLaunches();
 
   return (
-    <>
+    <> 
       <Main />
       <section className="calendar">
         <div className="container">
