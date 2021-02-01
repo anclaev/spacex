@@ -8,7 +8,7 @@ const Calendar = () => {
   const { data } = useLaunches();
 
   return (
-    <> 
+    <>
       <Main />
       <section className="calendar">
         <div className="container">
@@ -21,7 +21,10 @@ const Calendar = () => {
                   </div>
                   <div className="launches-content">
                     <h2 className="launches-title">{item.name}</h2>
-                    <Link to="/details" className="button launches-details">
+                    <Link
+                      to={`/details/${item.id}`}
+                      className="button launches-details"
+                    >
                       Подробнее
                     </Link>
                   </div>
