@@ -31,7 +31,7 @@ const Header = (props) => (
           </a>
         </li>
         <li className="item">
-          <a href="calendar.html" className="item-link">
+          <a href="/calendar" className="item-link">
             Calendar
           </a>
         </li>

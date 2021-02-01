@@ -26,8 +26,8 @@ const Details = () => (
         ></iframe>
       </div>
     </div>
-    <a href="calendar.html" className="button button-back">
-      go back
+    <a href="/calendar" className="button button-back">
+      GO BACK
     </a>
   </main>
 );

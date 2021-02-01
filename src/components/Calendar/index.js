@@ -19,7 +19,7 @@ const Calendar = () => (
             </div>
             <div className="launches-content">
               <h2 className="launches-title">FalconSat</h2>
-              <a href="./details.html" className="button launches-details">
+              <a href="./details" className="button launches-details">
                 Подробнее
               </a>
             </div>
@@ -40,7 +40,7 @@ const Calendar = () => (
                   DemoSat
                 </a>
               </h2>
-              <a href="./details.html" className="button launches-details">
+              <a href="./details" className="button launches-details">
                 Подробнее
               </a>
             </div>
@@ -61,7 +61,7 @@ const Calendar = () => (
                   Trailblazer
                 </a>
               </h2>
-              <a href="./details.html" className="button launches-details">
+              <a href="./details" className="button launches-details">
                 Подробнее
               </a>
             </div>
@@ -80,7 +80,7 @@ const Calendar = () => (
               <h2 className="launches-title">
                 <a href="https://en.wikipedia.org/wiki/Ratsat">RatSat</a>
               </h2>
-              <a href="./details.html" className="button launches-details">
+              <a href="./details" className="button launches-details">
                 Подробнее
               </a>
             </div>
