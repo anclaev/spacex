@@ -16,8 +16,6 @@ const Details = (props) => {
     setLaunch(getLaunch(props.match.params.id));
   }, [getLaunch, props.match.params.id]);
 
-  console.log(launch);
-
   const history = useHistory();
 
   if (!launch) return null;
