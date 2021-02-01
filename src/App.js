@@ -16,7 +16,7 @@ class App extends React.Component {
   fetchData = new FetchData();
 
   state = {
-    rocket: "Falcon 1",
+    rocket: null,
     rocketFeatures: null,
     rockets: [],
     company: null,
