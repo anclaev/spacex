@@ -1,0 +1,19 @@
+version: '2'
+services:
+  client:
+    container_name: spacex-client
+    image: spacex_client:latest
+    restart: always
+    expose:
+      - "3004"
+    environment:
+      VIRTUAL_HOST: spacex.anclaev.com
+      VIRTUAL_PORT: 3004
+      CERT_NAME: anclaev.com
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external:
+      name: proxy
